@@ -1,0 +1,7 @@
+留言内容表:
+id(主键)
+uid(用户id)
+content(留言内容)
+picture(留言心情图片)
+timeline(时间戳)
+delfla(是否删除)
