@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			font-family: "Hiragino Sans GB", "Microsoft Yahei", "SimSun", Arial, "Helvetica Neue", Helvetica;
+			background: #f8f9fc;				
+		}
+		.i_error {
+			position: relative;
+			/*width: 654px;*/
+			width: 34.0625%;
+			/*height: 467px;*/
+			margin: 67px auto 0;	
+			/*background: url(/lagouhtml/blocked_404.png) 0 0 no-repeat;*/
+		}
+		.i_logo {
+			position: absolute;
+			/*top: 116px;*/
+			top: 24.8394%;
+			/*left: 68px;*/
+			left: 9.785933%;
+			/*width: 110px;*/
+			width: 16.819572%;
+			/*height: 41px;*/
+			/*background: url(/lagouhtml/lagou_logo.png) 0 0 no-repeat;*/
+		}
+		.tip {
+			margin-top: 47px;
+			font-size: 24px;
+			line-height: 24px;
+			text-align: center;
+			color: #333;
+		}
+		.btn {
+			margin-top: 30px;
+			text-align: center;
+		}
+		.btn a {
+			padding: 0 18px;
+			font-size: 16px;
+			line-height: 16px;
+			text-decoration: none;
+			color: #777;
+		}
+		.btn a + a {
+			border-left: 1px solid #d5dadf;
+		}
+		.btn a:hover {
+			color: #00b38a;
+			/*text-decoration: underline;*/
+		}
+		.btn .green {
+			color: #00b38a;
+		}
+	</style>
+</head>
+<body>
+	<div class="i_error">
+		<img src="/lagouhtml/blocked_404.png" alt="404" width="100%">
+		<div class="i_logo"><img src="/lagouhtml/lagou_logo.png" alt="logo" width="100%"></div>
+	</div>	
+	<p class="tip" id="tipEle">啊哦，出错了，您访问的链接不存在！</p>
+	<p class="btn"><a class="green" href="javascript:history.go(-1);">返回上页</a><a href="http://www.lagou.com">返回首页</a></p>
+
+	<script type="text/javascript">
+		var body = document.getElementsByTagName( 'body' )[0];
+		var screenWidth = body.offsetWidth;
+		if ( screenWidth <= 1366 ) {
+			document.getElementById( 'tipEle' ).style.fontSize = "18px";
+		}
+	</script>
+<script type="text/javascript" src="https://account.lagou.com/upload/oss.js"></script></body>
+</html>
